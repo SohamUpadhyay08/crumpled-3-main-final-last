@@ -23,7 +23,7 @@ function setup() {
 	twoSide = new Dustbin(700,650,20,175);
 	
 	
-	paper = new Paper(50,610,17);
+	paper = new Paper(50,610);
 
 	launcher = new Launcher(paper.body,{x:150,y:300})
 
@@ -34,7 +34,7 @@ function setup() {
 
 
 function draw() {
-  rectMode(CENTER);
+  //rectMode(CENTER);
   background("white");
   Engine.update(engine);
   ground.display();
